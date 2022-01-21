@@ -1,0 +1,54 @@
+{
+  "name": "rxnav-loop",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "webpack --entry ./src/index.tsx --config ./webpack.config.js",
+    "test": "jest -i",
+    "test:coverage": "npm run test -- --collect-coverage",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "devDependencies": {
+    "@types/common-tags": "^1.8.0",
+    "@types/jest": "^27.4.0",
+    "@types/react-test-renderer": "^17.0.0",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.0",
+    "prettier": "^2.5.0",
+    "ts-jest": "^27.1.0",
+    "ts-loader": "^9.2.0",
+    "typescript": "^4.5.0",
+    "webpack": "^5.66.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@oliveai/ldk": "^3.10.0",
+    "common-tags": "^1.8.0",
+    "react-test-renderer": "^17.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testMatch": [
+      "**/*.test.{ts,tsx,js,jsx}"
+    ]
+  },
+  "ldk": {
+    "permissions": {
+      "network": {
+        "urlDomains": [
+          {
+            "value": "rxnav.nlm.nih.gov"
+          }
+        ]
+      },
+      "ui": {},
+      "whisper": {}
+    }
+  }
+}

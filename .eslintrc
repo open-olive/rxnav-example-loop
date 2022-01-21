@@ -1,0 +1,6 @@
+{
+  "extends": ["airbnb-typescript-prettier"],
+  "rules": {
+    "react/require-default-props": "off" // Typescript is covering this for us
+  }
+}

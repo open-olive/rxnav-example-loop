@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StartupWhisper should render correctly 1`] = `
+<oh-whisper
+  label="RxNav Drug Lookup"
+  onClose={null}
+>
+  <oh-markdown
+    body="# Look up 194,000+ unique drug names.
+Enter a drug name to find strength, formulation, RXCUI, synonyms, and more (ex. \`Cymbalta\`)."
+  />
+  <oh-text-input
+    label="Search by drug name"
+    onChange={[Function]}
+  />
+  <oh-button
+    label="Search"
+    onClick={[Function]}
+  />
+  <oh-divider />
+  <oh-markdown
+    body="_This data is powered by the U.S. National Library of Medicine._
+
+_Please do not search for patient health information as all data searched in this Loop will be sent to the API source._"
+  />
+</oh-whisper>
+`;
