@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": "src/index.tsx",
   "scripts": {
-    "build": "webpack --entry ./src/index.tsx --config ./webpack.config.js",
+    "build": "webpack --entry ./src/index.tsx --config ./node_modules/@oliveai/ldk/dist/webpack/config.js",
     "test": "jest -i",
     "test:coverage": "npm run test -- --collect-coverage",
     "lint": "eslint ./ --ignore-path .gitignore",
